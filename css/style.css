@@ -7,12 +7,33 @@ body {
 
 /* SITE HEADER */
 .site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #fff;
+}
+
+.logo-link {
+    transition: opacity 0.4s ease;
+}
+
+.logo-link:hover {
+    opacity: 0.8;
+}
+
+.logo-link:active {
+    opacity: 0.6;
+}
+
+.site-header-actions {
+    display: flex;
+    align-items: center;
 }
 
 
 /* SITENAV */
 .sitenav-list {
+    display: flex;
     list-style: none;
 }
 
@@ -24,6 +45,16 @@ body {
     text-transform: uppercase;
     text-decoration: none;
     color: #000;
+    transition: color 0.4s ease,
+                opacity 0.4s ease;
+}
+
+.sitenav-link:hover {
+    color: #ff7500;
+}
+
+.sitenav-link:active {
+    opacity: 0.6;
 }
 
 
@@ -34,11 +65,22 @@ body {
     color: #fff;
     background-color: #ff7500;
     text-decoration: none;
+    transition: opacity 0.4s ease;
 }
 
+.main-link:hover {
+    opacity: 0.8;
+}
+
+.main-link:active {
+    opacity: 0.6;
+}
 
 /* HERO */
 .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #252420;
     color: #fff;
 }
@@ -66,6 +108,13 @@ body {
 
 
 /* FEATURES */
+
+.features ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .features-heading {
     width: 440px;
     font-size: 72px;
@@ -76,6 +125,7 @@ body {
 
 .feature {
     width: 340px;
+    margin-right: 40px;
 }
 
 .feature-icon-wrapper {
@@ -95,6 +145,9 @@ body {
 
 /* PROMO */
 .promo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #252420;
     color: #fff;
 }
@@ -129,9 +182,30 @@ body {
     list-style: none;
 }
 
+.site-footer-top {
+    display: flex;
+}
+
+.site-footer-socials {
+    display: flex;
+    align-items: center;
+}
+
+.site-footer-socials a:hover {
+    color: #ff7500;
+}
+
+.site-footer-socials a:active {
+    opacity: 0.6;
+}
+
 .site-footer-divider {
     background-color: rgba(37,36,32,0.5);
     height: 2px;
+}
+
+.site-footer-bottom {
+    display: flex;
 }
 
 .site-footer-links {
@@ -142,4 +216,13 @@ body {
 .site-footer-links a {
     color:#252420;
     text-decoration: none;
+}
+
+.site-footer-links a:hover {
+    color: #ff7500;
+}
+
+
+.site-footer-links a:focus {
+    opacity: 0.6;
 }
