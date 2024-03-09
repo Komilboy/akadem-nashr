@@ -42,8 +42,18 @@ body {
 /* SITENAV */
 .sitenav-list {
     padding: 0;
+    margin: 0;
+    margin-right: 32px;
     display: flex;
     list-style: none;
+}
+
+.sitenav-item {
+    margin-right: 32px;
+}
+
+.sitenav-item:last-child {
+    margin-right: 0;
 }
 
 .sitenav-link {
@@ -108,6 +118,8 @@ body {
     width: 80px;
     height: 3px;
     border: 0;
+    margin: 0;
+    margin-bottom: 40px;
     background-color: #ff7500;
 }
 
@@ -118,9 +130,16 @@ body {
 }
 
 .hero-heading {
+    margin-top: 0;
+    margin-bottom: 24px;
     font-size: 40px;
     line-height: 1.2;
     font-family: "Roboto Condensed", "Arial", sans-serif;
+}
+
+.hero-text {
+    margin-top: 0;
+    margin-bottom: 32px;
 }
 
 
@@ -139,6 +158,8 @@ body {
 
 .features-heading {
     width: 440px;
+    margin-top: 0;
+    margin-bottom: 72px;
     font-size: 72px;
     font-family: "Roboto Condensed", "Arial", sans-serif;
     line-height: 1.2;
@@ -148,14 +169,18 @@ body {
 .feature-list {
     display: flex;
     padding: 0;
-    justify-content: space-between;
+    margin: 0;
     list-style: none;
 }
 
 .feature {
     width: 340px;
+    margin-right: 40px;
 }
 
+.feature:last-child {
+    margin-right: 0;
+}
 .feature-icon-wrapper {
     display: flex;
     justify-content: center;
@@ -190,10 +215,24 @@ body {
 }
 
 .promo-heading {
+    margin-top: 0;
+    margin-bottom: 24px;
     font-size: 40px;
     line-height: 48px;
 }
 
+.promo-info-wrapper {
+    margin-bottom: 24px;
+}
+
+.promo-text {
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.promo-text:last-child {
+    margin-bottom: 0;
+}
 
 .promo-highlight {
     color: #ff7500;
@@ -221,12 +260,22 @@ body {
 
 .site-footer-top {
     display: flex;
+    justify-content: space-between;
 }
 
 .site-footer-socials {
     display: flex;
     padding: 0;
+    margin: 0;
     align-items: center;
+}
+
+.site-footer-socials li {
+    margin-right: 16px;
+}
+
+.site-footer-socials li:last-child {
+    margin-right: 0;
 }
 
 .site-footer-socials a:hover {
@@ -239,6 +288,8 @@ body {
 
 .site-footer-divider {
     border: 0;
+    margin-top: 40px;
+    margin-bottom: 64px;
     background-color: rgba(37,36,32,0.5);
     height: 2px;
 }
@@ -249,10 +300,19 @@ body {
 
 .site-footer-links {
     width: 224px;
+    padding: 0;
+    margin: 0;
+    margin-right: 68px;
+    list-style: none;
     line-height: 19px;
 }
 
+.site-footer-links:last-child {
+    margin-right: 0;
+}
+
 .site-footer-links a {
+    display: block;
     color:#252420;
     text-decoration: none;
 }
